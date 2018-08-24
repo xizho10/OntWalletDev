@@ -1,4 +1,4 @@
-# OntWalletDev
+# OntWalletIntergration
 
 ## Wallet
 
@@ -7,7 +7,7 @@
 | Wallet  Name              |                    dev status                    |     comment      |
 | ------------------    | :----------------------------------------------: | :------------------: |
 |   O3                  |          developing                                 |         |
-|   Coin Manager         |          developing                                 |         |
+|   Coin Manager         |          developing                                 |       |
 |   Exodus         |          developing                                 |         |
 |   Bitpie         |          developing                                 |         |
 |   Bitkeep         |          developing                                 |         |
