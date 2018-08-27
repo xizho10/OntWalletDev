@@ -1,4 +1,4 @@
-# DAPP tutorial 
+# Ontology dapp development tutorial
 
 This tutorial will take you through the process of building your first dapp.
 
@@ -8,7 +8,7 @@ In this tutorial we will be covering:
 
 1. Setting up the development environment
 
-2. Creating a Truffle project using a Truffle Box
+2. Creating a project
 
 3. Writing the smart contract
 
@@ -30,12 +30,14 @@ In this tutorial we will be covering:
 
 [Git](https://git-scm.com/)
 
+
+## Creating a project
+
 [DAPP Demo](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
 
 Once we have those installed, we only need one command to install Demo:
 
 ```
-
 npm install
 npm run start
 
@@ -64,10 +66,11 @@ Now that we have written our smart contract, the next steps are to compile and d
 
 ### Running the tests
 
+smart contract automated testing framework
 [Test smart contract](https://github.com/lucas7788/pythontest)
 
 
-##Interacting with the dapp in a browser
+## Interacting with the dapp in a browser
 
 Now we're ready to use our dapp!
 
