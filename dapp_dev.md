@@ -30,18 +30,17 @@ In this tutorial we will be covering:
 
 [Git](https://git-scm.com/)
 
-
-
-## Creating project
-
 [DAPP Demo](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
 
+Once we have those installed, we only need one command to install Demo:
 
-### Directory structure
+```
 
-The default directory structure contains the following:
+npm install
+npm run start
 
-contracts/: Contains the source files for our smart contracts. 
+```
+
 
 ## Writing the smart contract
 
@@ -52,14 +51,14 @@ We'll start our dapp by writing the smart contract that acts as the back-end log
 [smartx](http://smartx.ont.io/)
 
 
-![Image text](https://github.com/xizho10/OntWalletIntergration/blob/master/smartx.png)
+![smartx login](https://github.com/xizho10/OntWalletIntergration/blob/master/smartx.png)
 
 
 ### Compiling and deploy/invoke the smart contract
 
 Now that we have written our smart contract, the next steps are to compile and deploy it.
 
-![Image text](https://github.com/xizho10/OntWalletIntergration/blob/master/smartx-deploy.png)
+![smart contract deploy and invoke](https://github.com/xizho10/OntWalletIntergration/blob/master/smartx-deploy.png)
 
 ### Migration smart contract
 
@@ -75,7 +74,7 @@ Now we're ready to use our dapp!
 ### Installing and configuring Cyano Wallet
 
 
-![Image text](https://github.com/xizho10/OntWalletIntergration/blob/master/cyano-wallet.png)
+![Cyano Wallet](https://github.com/xizho10/OntWalletIntergration/blob/master/cyano-wallet.png)
 
 The easiest way to interact with our dapp in a browser is through Cyano Wallet, a browser extension for Chrome.
 
@@ -101,7 +100,7 @@ To use the dapp, click the button.
 
 You'll be automatically prompted to approve the transaction by Cyano Wallet. Click Confirm to approve the transaction.
 
-![Image text](https://github.com/xizho10/OntWalletIntergration/blob/master/demo.png)
+![Cyano Wallet Confirm](https://github.com/xizho10/OntWalletIntergration/blob/master/demo.png)
 
 ### 
 
