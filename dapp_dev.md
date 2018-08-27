@@ -56,11 +56,17 @@ We'll start our dapp by writing the smart contract that acts as the back-end log
 
 ## 4. Compiling and deploy/invoke the smart contract
 
+### 4.1 Compiling smart contract
+
+Use Smartx to Compiling smart contract
+
+### 4.2 Deploy/invoke smart contract
+
 Now that we have written our smart contract, the next steps are to compile and deploy it.
 
 ![smart contract deploy and invoke](https://github.com/xizho10/OntWalletIntergration/blob/master/images/smartx-deploy.png)
 
-### Migration smart contract
+### 4.3 Migration smart contract
 
 Migration smart contract of smart contract
 
@@ -85,7 +91,7 @@ The easiest way to interact with our dapp in a browser is through Cyano Wallet, 
 ## 7. Using the dapp
 
 
-### Start the local web server of demo:
+### 7.1 Start the local web server of demo:
 
 ```
 npm run dev
@@ -95,16 +101,16 @@ npm run dev
 The dev server will launch and automatically open a new browser tab containing your dapp.
 
 
-### transfer or invoke smartcontract
+### 7.2 transfer or invoke smartcontract
 
 To use the dapp, click the button.
 
-### approve the transaction on Cyano Wallet
+### 7.3 approve the transaction on Cyano Wallet
 
 You'll be automatically prompted to approve the transaction by Cyano Wallet. Click Confirm to approve the transaction.
 
 ![Cyano Wallet Confirm](https://github.com/xizho10/OntWalletIntergration/blob/master/images/demo.png)
 
-### 
+### 7.4 check transaction
 
 In Cyano Wallet, you'll see the transaction listed:
