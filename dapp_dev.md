@@ -16,22 +16,20 @@ In this tutorial we will be covering:
 
 5. Testing the smart contract
 
-6. Creating a user interface to interact with the smart contract
-
 7. Interacting with the dapp in a browser
 
 ## Background
 
 
 
-## Setting up the development environment
+## 1. Setting up the development environment
 
 [Node.js v6+ LTS and npm](https://nodejs.org/en/)
 
 [Git](https://git-scm.com/)
 
 
-## Creating a project
+## 2. Creating a project
 
 [DAPP Demo](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
 
@@ -44,7 +42,7 @@ npm run start
 ```
 
 
-## Writing the smart contract
+## 3. Writing the smart contract
 
 
 We'll start our dapp by writing the smart contract that acts as the back-end logic and storage.
@@ -56,7 +54,7 @@ We'll start our dapp by writing the smart contract that acts as the back-end log
 ![smartx login](https://github.com/xizho10/OntWalletIntergration/blob/master/images/smartx.png)
 
 
-### Compiling and deploy/invoke the smart contract
+## 4. Compiling and deploy/invoke the smart contract
 
 Now that we have written our smart contract, the next steps are to compile and deploy it.
 
@@ -64,13 +62,15 @@ Now that we have written our smart contract, the next steps are to compile and d
 
 ### Migration smart contract
 
-### Running the tests
+Migration smart contract of smart contract
+
+### 5. Testing the smart contract
 
 smart contract automated testing framework
 [Test smart contract](https://github.com/lucas7788/pythontest)
 
 
-## Interacting with the dapp in a browser
+## 6. Interacting with the dapp in a browser
 
 Now we're ready to use our dapp!
 
@@ -82,7 +82,7 @@ Now we're ready to use our dapp!
 The easiest way to interact with our dapp in a browser is through Cyano Wallet, a browser extension for Chrome.
 
 
-## Using the dapp
+## 7. Using the dapp
 
 
 ### Start the local web server of demo:
