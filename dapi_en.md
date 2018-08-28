@@ -1,4 +1,6 @@
-# Abstract
+# dAPI Communication protocol
+
+## Abstract
 This proposal has two major parts:
 
 * A Javascript API is proposed for dApps development. This dAPI allows dApps to communicate with Ontology blockchain and make requests for transfers, ONT ID registration and others, without requiring users to trust the dApp itself. The issue of trust is shifted to the dAPI provider.

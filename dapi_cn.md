@@ -1,4 +1,4 @@
-#dAPI-轻量级dApp开发协议
+# dAPI-轻量级Ontology dApp开发协议
 
 dAPI是ontology轻量级去dApp开发协议。
 
@@ -8,10 +8,6 @@ dAPI极大简化了sdk的复杂性，把构造交易、签名转移到dAPI provi
 
 Cyano Wallet就是一个dAPI provider，当dApps发起确认请求时，Cyano Wallet会弹出确认框，只有用户确认后交易才发出。
 
-
-dApps使用者调用dAPI接口，就可以通过dAPI provider和链通信，包括查询链信息、转账、Ontid等接口，优点是把dApps的安全问题转移到dAPI provider，dApps无需再关心安全问题。
-
-dAPI provider
 
 
 ## 1. 账号和身份管理
@@ -42,11 +38,11 @@ function getBalance(address: string): Promise<Balance>
 
 ## 2. 资产
 
-获取dAPI provider里所有相关的账号
+**getOwnAccounts**
 ```
 getOwnAccounts() : string[]
 ```
-
+返回dAPI provider里所有相关的账号
 
 获取dAPI provider里的默认账号
 ```
