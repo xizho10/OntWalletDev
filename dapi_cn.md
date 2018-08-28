@@ -196,7 +196,7 @@ function addEventListener(listener: EventListener): void
 ```
 
 
-5. 架构图
+## 5. 架构图
 
 OEP-6 架构图
 
