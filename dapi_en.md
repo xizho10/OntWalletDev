@@ -23,11 +23,13 @@ dAPI, the API for dApps this OEP is proposing.
 * **NEOVM**, a lightweight virtual machine for execution of Neo/Ontology smart contracts.
 
 ### Asynchronicity and error handling
+
 All the functions except Utils component are communicating with extension through asynchronious message channel. Therefore all the methods are returning Promises.
 
 The promises will be either resolved immediately if no interaction with user UI or blockchain is required or later when the user action takes place/blockchain responds. In case the call to method trigger an error, the error code is transmitted in rejected promise. Specific error codes are described with every method.
 
 ### Account/Identity management
+
 Because dAPI shifts the issue of trust from dApp to dApp provider, all account and identity management is external to the dApp. Therefore there are no methods which directly handle private keys. The dApp won't need to sign the transaction itself.
 
 Any time dApp makes a call that requires a private key to sign something (makeTransfer, sign), dApp provider will inform user about the action and prompt him for permission.
@@ -37,6 +39,7 @@ dApp provider can even forward the request to external signing mechanism as part
 dAPI providers can choose to support multiple accounts and identities. Account and identity switching is part of dAPI provider implementation. dAPI provider should share with dApp as little information about user accounts and identities as possible, because it posses a security risk. Otherwise malicious dApp can list all user accounts with balances and identities.
 
 **dAPI access restriction**
+
 Using dAPI any dApp is able to call the dAPI provider and initiate an interaction with the user (e.g.: makeTransfer). Only prerequisite is, that the user visits the dApp page. Although the user will need to confirm such an action, bothering him with this action, if he has no intention to confirm it, will hinder the experience.
 
 Therefore the dAPI will forward with every request the Caller object containing the url of the dApp page or id of another extension trying to communicate with dAPI provider. It is upto the dAPI provider to implement custom permission granting workflow or automatic blacklisting.
@@ -145,7 +148,7 @@ compatability: [
 
 dAPI provider does not need to support all future OEPs concerned with dAPI.
 
- Rejects with NO_PROVIDER in case there is no dAPI provider installed.
+* Rejects with NO_PROVIDER in case there is no dAPI provider installed.
  
 ### Asset
 A primary focus of Asset API is to initiate a transfer. The request needs to be confirmed by the user.
@@ -156,9 +159,9 @@ function getAccount(): Promise<string>
 ```
 
 Returns currently selected account of logged in user.
-```
- * Rejects with '''NO_ACCOUNT''' in case the user is not signed in or has no accounts
- ```
+
+* Rejects with ```NO_ACCOUNT``` in case the user is not signed in or has no accounts
+
 **makeTransfer**
 ```
 function makeTransfer(recipient: string, asset: Asset, amount: number): Promise<string>
@@ -182,7 +185,7 @@ function getIdentity(): Promise<string>
 ```
 
  Returns currently selected identity of logged in user.	
- * Rejects with '''NO_IDENTITY''' in case the user is not signed in or has no identity
+ * Rejects with **NO_IDENTITY** in case the user is not signed in or has no identity
  
 **getDDO**
 
@@ -198,7 +201,7 @@ Queries Description Object of the identity. This call must query the blockchain.
 
 Returns Description object of the identity. This object contains public keys and attributes of the identity.
 
-Rejects with MALFORMED_IDENTITY in case the identity is not a valid identity
+* Rejects with **MALFORMED_IDENTITY** in case the identity is not a valid identity
 
 **addAttributes**
 
@@ -207,7 +210,7 @@ function addAttributes(attributes: OntIdAttribute[]): Promise<void>
 ```
 Initiates adding of attributes to the user identity. This action needs to be confirmed by the user. Attributes with existing key will be overwritten.
 
-Rejects with NO_IDENTITY in case the user is not signed in or has no identity
+* Rejects with **NO_IDENTITY** in case the user is not signed in or has no identity
 
 **removeAttribute**
 ```
@@ -215,7 +218,7 @@ function removeAttribute(key: string): Promise<void>
 ```
 Initiates removing of attribute from the user identity. This action needs to be confirmed by the user.
 
-Rejects with NO_IDENTITY in case the user is not signed in or has no identity
+* Rejects with **NO_IDENTITY** in case the user is not signed in or has no identity
 
 ### Message
 This API deals with arbitrary message signing and verification.
@@ -237,8 +240,8 @@ This method does not require the dApp to disclose the message itself, only the h
 
 Because malicious dApp can hash a real prepared transfer transaction and plant it for signing, that posses a risk to the user. Therefore the hash is prepended with known string Ontology message:, and only this hash is put for signing.
 
-* Rejects with NO_ADDRESS in case the user is not signed in or has no account or identity
-* Rejects with MALFORMED_MESSAGE in case the message is not hex encoded
+* Rejects with **NO_ADDRESS** in case the user is not signed in or has no account or identity
+* Rejects with **MALFORMED_MESSAGE** in case the ```message``` is not hex encoded
 
 **verifyMessageHash**
 ```
@@ -301,15 +304,18 @@ In case the smart contract requires the call to be signed also by an identity, p
 
 Smart code execution is two step process:
 
-The transaction is send to the network.
-The transaction is processed and recorded to the blockchain at a later time.
-The invoke function will finish only after the transaction is processed by the network.
-Returns transaction hash and array of results.
+1. The transaction is send to the network.
+
+2. The transaction is processed and recorded to the blockchain at a later time.
+
+The  ```invoke ``` function will finish only after the transaction is processed by the network.
+
+Returns  ```transaction ``` hash and array of  ```results ```.
 
 To output a result from smart contract, call Runtime.Notify method. For every such a call, one result will be outputed.
 
-* Rejects with NO_ACCOUNT in case the user is not signed in or has no accounts
-* Rejects with MALFORMED_CONTRACT in case the contract is not hex encoded contract address
+* Rejects with **NO_ACCOUNT** in case the user is not signed in or has no accounts
+* Rejects with **MALFORMED_CONTRACT** in case the contract is not hex encoded contract address
 
 **invokeRead**
 
