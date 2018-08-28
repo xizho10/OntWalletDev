@@ -1,6 +1,6 @@
-#dAPI简易dApp开发协议
+#dAPI-轻量级dApp开发协议
 
-dAPI是ontology去中心化App开发协议。
+dAPI是ontology轻量级去dApp开发协议。
 
 dApps使用者调用dAPI接口，通过dAPI provider和链通信，包括查询链信息、转账、Ontid等接口，
 
@@ -28,7 +28,6 @@ dAPI provider
 type Network = 'MAIN' | 'TEST' | 'PRIVATE';
 type Asset = 'ont' | 'ong';
 
-function getGenerateBlockTime(): Promise<number | null>
 function getNodeCount(): Promise<number>
 function getBlockHeight(): Promise<number>
 function getMerkleProof(txHash: string): Promise<MerkleProof>
