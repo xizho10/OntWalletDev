@@ -31,9 +31,15 @@ In this tutorial we will be covering:
 
 ## 2. Creating a project
 
+download dapi package
+
+```
+npm i ontology-dapi
+```
+
 [DAPP Demo](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
 
-Once we have those installed, we only need one command to install Demo:
+Once we have those installed, we only need one command to run Demo:
 
 ```
 npm install
