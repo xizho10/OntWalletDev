@@ -68,7 +68,9 @@ Use Smartx to Compiling smart contract
 
 ### 4.2 Deploy/invoke smart contract
 
-Now that we have written our smart contract, the next steps are to compile and deploy it.
+Now that we have written our smart contract, the next steps are to compile and deploy it. Request testnet ONG in Discard if you not have.
+
+[Request testnet ONG in Discord](https://discordapp.com/channels/400884201773334540/453499298097922068)
 
 ![smart contract deploy and invoke](https://github.com/xizho10/OntWalletIntergration/blob/master/images/smartx-deploy.png)
 
@@ -78,8 +80,15 @@ Migration smart contract of smart contract
 
 ### 5. Testing the smart contract
 
-smart contract automated testing framework
-[Test smart contract](https://github.com/lucas7788/pythontest)
+Smart contract automated testing framework.
+[Testing framework](https://github.com/lucas7788/pythontest)
+
+if you want run private chain,download Ontology and run node in testmode. [Ontology](https://github.com/ontio/ontology/releases)
+
+```
+./ontology --testmode --gasprice 0
+
+```
 
 
 ## 6. Interacting with the dapp in a browser
