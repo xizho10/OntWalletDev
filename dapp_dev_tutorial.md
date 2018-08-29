@@ -18,8 +18,6 @@ In this tutorial we will be covering:
 
 7. Interacting with the dapp in a browser
 
-## Background
-
 
 
 ## 1. Setting up the development environment
