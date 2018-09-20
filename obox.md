@@ -32,6 +32,8 @@ $ ./ontology --testmode --gasprice 0
 
 * [smart contract automated testing framework](https://github.com/ontio-community/ontology-sctf) 
 * [SmartX](http://smartx.ont.io/#/)
+* dapi
+* SDKs
 
 ### IPFS
 
