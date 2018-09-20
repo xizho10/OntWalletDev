@@ -24,7 +24,7 @@ With obox you can:
 
 downloading the latest [Ontology release](https://github.com/ontio/ontology/releases) and starting it as below.
 ```
-$ ./ontology --testmode --gasprice 0
+$ ./ontology --testmode 
 
 ```
 
