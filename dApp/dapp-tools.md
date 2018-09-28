@@ -139,6 +139,8 @@ An Analysis Tool for Smart Contracts based on Python.
 
 > https://www.ethpm.com/
 
+[Ethereum Smart Contract Packaging Specification](https://github.com/ethereum/EIPs/issues/190)
+
 A package manager for Ethereum.
 
 - Get started with Truffle:
