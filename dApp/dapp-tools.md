@@ -3,19 +3,11 @@
 ## Truffle suite/Embark/Remix/Zeppelin/EthPM
 
 
-### 1.4. Embark
 
-A framework for serverless Decentralized Applications using Ethereum, IPFS and other platforms. 
 
-> https://embark.status.im/
+### 1.1. Truffle Suite
 
-```shell
-npm install -g embark
-```
-
-### 1.5. Truffle Suite
-
-#### 1.5.1. ConsenSys
+#### 1.1.1. ConsenSys
 
 ConsenSys is a venture production studio that supports and grows a number of projects, platforms, and dapps building off the Ethereum blockchain (`ConsenSys`是一家企业生产工作室，支持并培育了许多依托于以太坊区块链的项目、平台以及去中心化应用).
 
@@ -28,7 +20,7 @@ ConsenSys's projects address every part of the Ethereum ecosystem, including (`C
 - B2C dapps: Grid+, Cellarius
 - enterprise solutions(企业级解决方案): Kaleido
 
-#### 1.5.2. Truffle
+#### 1.2.2. Truffle
 
 Just like we have frameworks for web application development such as Ruby on Rails, Python/Django etc, Truffle is the most popular frameworks used to develop dapps.
 
@@ -39,9 +31,48 @@ Just like we have frameworks for web application development such as Ruby on Rai
 npm install -g truffle
 ```
 
+Truffle是一个世界级的开发环境，测试框架，以太坊的资源管理通道，致力于让以太坊上的开发变得简单，Truffle有以下特点：
+* 内置的智能合约编译，链接，部署和二进制文件的管理
+* 快速开发下的自动合约测试
+* 脚本化的，可扩展的部署与发布框架
+* 部署到不同的公网或私网的网络环境管理功能
+* 使用EthPM&NPM提供的包管理，使用ERC190标准
+* 与合约直接通信的直接交互控制台（写完合约就可以命令行里验证了）
+* 可配的构建流程，支持紧密集成
 
+### 1.2. Embark
 
-### 1.6. Metamask
+A framework for serverless Decentralized Applications using Ethereum, IPFS and other platforms. 
+
+Embark 让开发者开发和部署以太坊dapp更容易，Embark当前集成了EVM区块链、去中心化存储IPFS、去中心化通信平台（Whisper和Orbit），支持swarm部署。
+
+#### Embark框架特点
+区块链（Ethereum）:
+
+* 自动化的部署合约，方便js代码中调用。Embark可以自动监听合约的变化并重新部署变化后的合约。
+* 合约可以通过js的promise调用
+* 使用Javascript使用合约进行测试驱动开发。
+* 追踪已经部署的合约，当合约更新的时候，会自动更新
+* 管理不同链(testnet、private net,livenet)
+* 轻松管理相互依赖合同的复杂系统
+
+去中心化存储（IPFS）:
+* 通过EmbarkJS轻松存储和检索DApp上的数据。 包括上传和检索文件。
+* 将完整的应用程序部署到IPFS或Swarm。 去中心化通信（Whisper, Orbit）:
+* 通过Whisper或Orbit轻松通过P2P渠道发送/接收消息。
+
+web 技术:
+
+* 与任何网络技术集成，包括React，Foundation等。
+* 使用您想要的任何构建管道或工具，包括grunt，gulp和webpack。
+
+> https://embark.status.im/
+
+```shell
+npm install -g embark
+```
+
+### 1.3. Metamask
 
 It is unrealistic for everyone in the world to run a node to interact with the blockchain. So, the folks at Metamask host a number of nodes so you don’t have to. All you have to do is install Metamask and it automatically connects to their nodes.
 
@@ -57,7 +88,7 @@ It is unrealistic for everyone in the world to run a node to interact with the b
 
 ![metaMaskPhishing](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/metaMaskPhishing.png)
 
-## 2. Remix
+### 1.4. Remix
 
 Remix is a browser-based compiler and IDE that enables users to build Ethereum contracts with Solidity language and to debug transactions.
 
@@ -68,7 +99,7 @@ Remix is a browser-based compiler and IDE that enables users to build Ethereum c
 [Remix调研报告](https://github.com/wdx7266/learning-ethereum/tree/master/doc/IDE)
 
 
-## 3. Populs
+### 1.5. Populs
 
 Development framework for Ethereum smart contracts.
 
@@ -78,21 +109,21 @@ Development framework for Ethereum smart contracts.
 pip install populus
 ```
 
-## 4. Zeppelin
+### 1.6. Zeppelin
 
 > https://zeppelin.solutions/
 
 ![zeppelin](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/zeppelin.png)
 
-### 4.1. OpenZeppelin
+#### 1.6.1. OpenZeppelin
 
 A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity.
 
-### 4.2. ZeppelinOS
+#### 1.6.2. ZeppelinOS
 
 A distributed platform of tools and services to develop and manage smart contract applications securely.
 
-## 5. Oyente
+### 1.7. Oyente
 
 An Analysis Tool for Smart Contracts based on Python.
 
