@@ -1,6 +1,10 @@
 # DApp
 
-* [Tools](dapp-tools.md): Truffle suite/Embark/Remix/Zeppelin/EthPM   ——周喜、帅帅、定鑫。帅帅调研跨链
+[dApp定鑫调研](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md),[dApp帅帅调研](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
+
+dApp任务分配：
+
+* [SC Tools](dapp-tools.md): Truffle suite/Embark/Remix/Zeppelin/EthPM   ——周喜、帅帅、定鑫。帅帅调研跨链
 * [Boilerplates](dapp-boilerplates.md) : Drizzle                     ——大双、沈寅
 * [Dapps web](dapp-web.md): parity/MIST/State of Dapps                ——苏凌霄
 * [Blockchain ui and IPFS](dapp-blockchain.md): Geth/Ganache/IPFS   ——底层
