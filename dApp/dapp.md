@@ -1,4 +1,4 @@
-# DApp
+# DApp调研
 
 [dApp定鑫调研分享](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md),[dApp帅帅调研分享](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
 
@@ -11,7 +11,7 @@ dApp调研任务：
 * Dapps                                                                  ——**周强**提供服务。
 
 
-##  以太坊开发工具
+##  以太坊开发工具集
 
 * Mist Mist的功能包括保存以太币、发送交易、部署合约等。你可以用它实现与区块链平台或测试网络
 的交互。当你需要进行快速交易时超级有用
