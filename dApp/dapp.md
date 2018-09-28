@@ -14,10 +14,10 @@ dApp调研任务：
 ## 开发计划
 
 定鑫:
-1、ontology-python-obox: unbox, init,deploy, invoke, compile, test  //test使用帅帅的测试框架，节省时间
-2、ontology-python-debug //fork vm代码，基于vm上增加debug
-3、ontology-python-obox: debug
-4、ontology-python-obox: install SC
+1. ontology-python-obox: unbox, init,deploy, invoke, compile, test  //test使用帅帅的测试框架，节省时间
+2. ontology-python-debug //fork vm代码，基于vm上增加debug
+3. ontology-python-obox: debug
+4. ontology-python-obox: install SC
 
 
 ##  以太坊开发工具集
