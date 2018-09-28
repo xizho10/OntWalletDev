@@ -6,9 +6,9 @@ dApp调研任务：
 
 * [SC Tools](dapp-tools.md): Truffle suite/Embark/Remix/Zeppelin/EthPM   ——**周喜**、**帅帅**、**定鑫**。帅帅调研跨链
 * [Boilerplates](dapp-boilerplates.md) : Drizzle                     ——**大双**、**沈寅**
-* [Dapps web](dapp-web.md): parity/MIST/State of Dapps                ——**苏凌霄**
+* [Dapps web](dapp-web.md): etherscan/parity/MIST/State of Dapps                ——**苏凌霄**、**李颖轩**
 * [Blockchain ui and IPFS](dapp-blockchain.md): Geth/Ganache/IPFS   ——**底层**
-* Dapps                                                                  ——**周强**提供服务。
+* Dapps                                                                  ——**周强**提供后台服务。
 
 
 ##  以太坊开发工具集
