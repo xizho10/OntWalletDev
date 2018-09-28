@@ -8,21 +8,21 @@ one click blockchain.
 
 Ganache is a personal blockchain for Ethereum development you can use to deploy contracts, develop your applications, and run tests. It is available as both a desktop application as well as a command-line tool (formerly known as the TestRPC). Ganache is available for Windows, Mac, and Linux.
 
-![ganacheBlocks1](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks1.png)
+![ganacheBlocks1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks1.png)
 
-![ganacheBlocks2](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks2.png)
+![ganacheBlocks2](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks2.png)
 
-![ganacheBlocks3](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks3.png)
+![ganacheBlocks3](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacheBlocks3.png)
 
-![ganacgeMetaMask1](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask1.png)
+![ganacgeMetaMask1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask1.png)
 
-![ganacgeMetaMask2](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask2.png)
+![ganacgeMetaMask2](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask2.png)
 
-![ganacgeMetaMask3](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask3.png)
+![ganacgeMetaMask3](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask3.png)
 
-![ganacgeMetaMask4](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask4.png)
+![ganacgeMetaMask4](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask4.png)
 
-![ganacgeMetaMask5](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask5.png)
+![ganacgeMetaMask5](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ganacgeMetaMask5.png)
 
 
 
@@ -41,13 +41,13 @@ Ex: `0x80C013d980aB049471c88E1603b8b4a60E03295C` is my wallet address. If you ar
 
 > Docs: https://docs.ens.domains/en/latest/
 
-![ens](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ens.png)
+![ens](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ens.png)
 
-![getStartedEns](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/getStartedEns.png)
+![getStartedEns](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/getStartedEns.png)
 
-![ensSubDomains1](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains1.png)
+![ensSubDomains1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains1.png)
 
-![ensSubDomains2](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains2.png)
+![ensSubDomains2](https://raw.githubusercontent.comwdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains2.png)
 
 ### 8.2. Swarm
 
@@ -55,13 +55,13 @@ The blockchain is good to store small amounts of data. What if you want to store
 
 Swarm is used to solve this problem. Swarm is a decentralized content storage and distribution service. You can think of it as a CDN but instead of the entire CDN hosted on one company’s servers, it is distributed on computers across the internet. Just like you run an Ethereum node, you run a swarm node to connect to the swarm network.
 
-![swarmHelp](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/swarmHelp.png)
+![swarmHelp](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/swarmHelp.png)
 
 When you deploy an Ethereum contract on to the blockchain, you get a deployed address and JSON interface of the ABI (The contract interface similar to API).
 
 When you want someone to use your contract, you have to give them the deployed address and the ABI. In the future, the ABI will be stored on Swarm so anyone can look up the ABI just by looking at the Ethereum address.
 
-![Swarm](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/swarm.png)
+![Swarm](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/swarm.png)
 
 Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web3 stack. The primary objective of Swarm is to provide a decentralized and redundant store for dapp code and data as well as block chain and state data.
 

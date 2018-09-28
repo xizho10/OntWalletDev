@@ -86,13 +86,13 @@ print('Setting value to: Nihao')
 print('Contract value: {}'.format(contract_instance.greet()))
 ```
 
-![web3Py](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/web3Py.png)
+![web3Py](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/web3Py.png)
 
 ### 7.3. web3j
 
 web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with Smart Contracts and integrating with clients (nodes) on the Ethereum network:
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/web3jNetwork.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/web3jNetwork.png)
 
 > https://web3j.io/
 

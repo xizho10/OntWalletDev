@@ -7,23 +7,23 @@ parity主界面
 
 该界面主要展示了parity支持的功能
 
-![avatar](https://github.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity1.png)
+![avatar](https://raw.githubusercontent.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity1.png)
 
 节点信息界面
 
-![avatar](https://github.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity2.png)
+![avatar](https://raw.githubusercontent.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity2.png)
 
 dapp 浏览器界面
 
-![avatar](https://github.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity3.png)
+![avatar](https://raw.githubusercontent.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/parity3.png)
 
 web3 console界面
 
-![avatar](https://github.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/paritycli.png)
+![avatar](https://raw.githubusercontent.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/paritycli.png)
 
 交易队列界面
 
-![avatar](https://github.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/paritytxqueue.png)
+![avatar](https://raw.githubusercontent.com/lucas7788/workingdata/blob/master/blockchaingames/ethereum/paritytxqueue.png)
 
 
 
@@ -33,7 +33,7 @@ The Mist browser is the tool of choice to browse and use Ðapps.
 
 > https://github.com/ethereum/mist
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/mistGeth.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/mistGeth.png)
 
 The Mist is a desktop application used to communicate with your node. Anything we can do using the geth console can be accomplished through this Graphical User Interface.
 
@@ -49,13 +49,13 @@ The Mist is a desktop application used to communicate with your node. Anything w
 
 #### 1.3.2. Usage
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist0.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist0.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist1.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist1.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist2.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist2.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist3.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist3.png)
 
 ÐApps are ranked by DAU (daily active users).
 
@@ -78,17 +78,17 @@ Dapp categories:
 - Insurance
 - Health
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist4.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist4.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist5.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist5.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist6.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/master/img/DApp/Ethereum/useMist6.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist7.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist7.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist8.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist8.png)
 
-![Alt text](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist9.png)
+![Alt text](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/useMist9.png)
 
 
 
@@ -141,7 +141,7 @@ mist.requestAccount(function(error, address) {
 
 ## 9. State of Dapps
 
-![stateDapps](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/stateDapps.png)
+![stateDapps](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/stateDapps.png)
 
 > https://www.stateofthedapps.com/
 
@@ -149,9 +149,9 @@ mist.requestAccount(function(error, address) {
 
 Ethereum ecosystem updates from [Sourcerers](https://sourcerers.io/).
 
-![Sourcerers](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/sourceres.png)
+![Sourcerers](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/sourceres.png)
 
-![dappDaily1](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/dappDaily1.png)
+![dappDaily1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/dappDaily1.png)
 
-![dappDaily2](https://github.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/dappDaily2.png)
+![dappDaily2](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/dappDaily2.png)
 
