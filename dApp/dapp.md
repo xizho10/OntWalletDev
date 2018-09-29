@@ -1,33 +1,22 @@
-# DApp调研
+# 调研情况汇总
 
-[dApp定鑫调研分享](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md),[dApp帅帅调研分享](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
+[以太坊应用生态及工具研究- 定鑫](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md),
 
-dApp调研任务：
+[以太坊应用生态及工具研究- 司帅帅](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
 
-* [SC Tools](dapp-tools.md): Truffle suite/Embark/Remix/Zeppelin/EthPM   ——**周喜**、**帅帅**、**定鑫**。帅帅调研跨链
+进行中的调研任务：
+
+* [SC Tools](dapp-tools.md): Truffle suite/Embark/Remix/Zeppelin/EthPM   ——**周喜**、**帅帅**、**定鑫**
 * [Boilerplates](dapp-boilerplates.md) : Drizzle                     ——**大双**、**沈寅**。大双调研Mist provide，考虑Owallet也支持provider功能。
 * [Dapps web](dapp-web.md): etherscan/parity/MIST/State of Dapps                ——**苏凌霄**、**李颖轩**
 * [Blockchain ui and IPFS](dapp-blockchain.md): Geth/Ganache/IPFS/ENS   ——**底层**
-* Dapps                                                                  ——**周强**提供后台服务。
+* [DDXF](ddxf.md) —— **肖旻**、**周强**
+* [分布式评价体系] —— **华正皓**、**肖旻**
+* [iCon]() - **肖旻**
+* [docsign研究]() - **肖旻**
+* [跨链组件研究跨链调研Parity bridge() —— **帅帅**
 
 
-## 开发计划
-
-定鑫:
-1. ontology-python-obox: unbox, init,deploy, invoke, compile, test  //test使用帅帅的测试框架，节省时间
-2. ontology-python-debug //fork vm代码，基于vm上增加debug
-3. ontology-python-obox: debug
-4. ontology-python-obox: install SC
-5. IPFS python sdk调用。
-
-帅帅：
-
-1. pythonsdk 支持python 3.6,    
-2. python vm开发  
-3. 子链sdk开发     
-4. 跨链调研（parity bridge） 
-5. python vm debug测试
-6. IPFS环境搭建
 
 ##  以太坊开发工具集
 
@@ -50,10 +39,3 @@ parity特点:
 * BlockApps BlockApps提供了一些简洁的API来帮助你查看钱包余额、编写交易、读取合约状态等
 * Embark Embark是另一个流行的开发框架，帮你轻松地构建、测试和部署DApp
 * Zeppelin Zeppelin库用来编写安全的合约(类似于Java中的jar包，在合约中可以引入智能合约语言开发的工具库)
-
-## Dapps:
-
-
-[CryptoKitties](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/cryptoKitties.md)
-[Bancor协议Token]()
-[Fomo3D]()
