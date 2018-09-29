@@ -18,7 +18,16 @@ dApp调研任务：
 2. ontology-python-debug //fork vm代码，基于vm上增加debug
 3. ontology-python-obox: debug
 4. ontology-python-obox: install SC
+5. IPFS python sdk调用。
 
+帅帅：
+
+1. pythonsdk 支持python 3.6,    
+2. python vm开发  
+3. 子链sdk开发     
+4. 跨链调研（parity bridge） 
+5. python vm debug测试
+6. IPFS环境搭建
 
 ##  以太坊开发工具集
 
