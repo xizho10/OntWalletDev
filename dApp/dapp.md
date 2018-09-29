@@ -1,8 +1,10 @@
 # 调研情况汇总
 
-[以太坊应用生态及工具研究- 定鑫](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md),
+已输出的调研成果：
 
-[以太坊应用生态及工具研究- 司帅帅](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
+* [以太坊应用生态及工具研究- 定鑫](https://github.com/wdx7266/learning-ethereum/blob/master/doc/DApp/dappInEthereumEcosystem.md)
+
+* [以太坊应用生态及工具研究- 司帅帅](https://github.com/lucas7788/workingdata/tree/master/blockchaingames/ethereum)
 
 进行中的调研任务：
 
@@ -14,7 +16,7 @@
 * [分布式评价体系] —— **华正皓**、**肖旻**
 * [iCon]() - **肖旻**
 * [docsign研究]() - **肖旻**
-* [跨链组件研究跨链调研Parity bridge() —— **帅帅**
+* [跨链组件研究跨链调研Parity bridge]() —— **帅帅**
 
 
 
