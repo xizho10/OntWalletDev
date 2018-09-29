@@ -1,15 +1,7 @@
 #  Ontology obox framework
 
+对标Ethereum truffle framework，https://truffleframework.com/docs
 
-## ethereum truffle framework
-
-
-https://truffleframework.com/docs
-
-
-* ganache
-* truffle
-* drizzle
 
 ## Ontology obox framework
 
@@ -45,7 +37,7 @@ $ ./ontology --testmode
 
 ### Web Technologies
 
-脚手架
+开发脚手架
 
 
 ## 进度
