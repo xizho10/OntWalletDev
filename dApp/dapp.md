@@ -11,7 +11,7 @@
 * [SC Tools](dapp-tools.md): Truffle suite/Embark/Remix/Metamask/Zeppelin/EthPM   ——**周喜**、**帅帅**、**定鑫**
 * [Boilerplates](dapp-boilerplates.md) : Drizzle                     ——**大双**、**沈寅**。大双调研Mist provide，考虑Owallet也支持provider功能。
 * [Dapps web](dapp-web.md): etherscan/parity/MIST/State of Dapps                ——**苏凌霄**、**李颖轩**
-* [Blockchain ui and IPFS](dapp-blockchain.md): Geth/Ganache/IPFS/ENS   ——**底层**
+* [Blockchain ui and IPFS](dapp-blockchain.md): Geth/Ganache/IPFS/ENS   ——**需要底层支持**
 * [DDXF](ddxf.md) —— **肖旻**、**周强**
 * [分布式评价体系]() —— **华正皓**、**肖旻**
 * [iCon]() - **肖旻**
@@ -42,4 +42,3 @@ parity特点:
 * Embark Embark是另一个流行的开发框架，帮你轻松地构建、测试和部署DApp
 * Zeppelin Zeppelin库用来编写安全的合约(类似于Java中的jar包，在合约中可以引入智能合约语言开发的工具库)
 * EthPM,A package manager for Ethereum.
-* EthPM

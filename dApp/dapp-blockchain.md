@@ -1,8 +1,8 @@
-## Geth/Ganache
+# Geth/Ganache/IPFS/ENS
 
 
 
-#### 1.5.3. Ganache
+##  Ganache
 
 one click blockchain.
 
@@ -27,29 +27,11 @@ Ganache is a personal blockchain for Ethereum development you can use to deploy 
 
 
 
-## 8. Technology
+## IPFS
 
-### 8.1. ENS
 
-Ethereum Naming System is the DNS for the Ethereum world. Just like you map an IP address to a human readable name, you can map any Ethereum contract or wallet address to a human readable name.
 
-Ex: `146.115.22.177` → `google.com`. Instead of typing the ip address in your browser, you type google.com which resolves to that IP address
-
-Ex: `0x80C013d980aB049471c88E1603b8b4a60E03295C` is my wallet address. If you are in the mood to send me some Ether, you don’t have to memorize this address. Once ENS launches, I will probably map it to `mvmurthy.eth` and you can use that to send me money easily.
-
-> https://ens.domains/
-
-> Docs: https://docs.ens.domains/en/latest/
-
-![ens](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ens.png)
-
-![getStartedEns](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/getStartedEns.png)
-
-![ensSubDomains1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains1.png)
-
-![ensSubDomains2](https://raw.githubusercontent.comwdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains2.png)
-
-### 8.2. Swarm
+### 1. Swarm
 
 The blockchain is good to store small amounts of data. What if you want to store a patient record, a sale deed or some large file which needs to be publicly timestamped? It is expensive and also not scalable to store a blob in the blockchain.
 
@@ -79,7 +61,7 @@ Swarm is also set out to provide various base layer services for web3, including
 
 - Self-sustaining: Built-in incentive system ensures the network's economic viability.
 
-### 8.3. IPFS
+### 2. IPFS
 
 IPFS (Inter Planetary File System) is conceptually exactly similar to Swarm. It is a decentralized storage system. It is not related to Ethereum directly but can be integrated with Ethereum.
 
@@ -87,7 +69,30 @@ IPFS (Inter Planetary File System) is conceptually exactly similar to Swarm. It 
 
 The differences between Swarm and IPFS here: [IPFS & SWARM](https://github.com/ethersphere/go-ethereum/wiki/IPFS-&-SWARM).
 
-### 8.4. Whisper
+
+
+## ENS
+
+Ethereum Naming System is the DNS for the Ethereum world. Just like you map an IP address to a human readable name, you can map any Ethereum contract or wallet address to a human readable name.
+
+Ex: `146.115.22.177` → `google.com`. Instead of typing the ip address in your browser, you type google.com which resolves to that IP address
+
+Ex: `0x80C013d980aB049471c88E1603b8b4a60E03295C` is my wallet address. If you are in the mood to send me some Ether, you don’t have to memorize this address. Once ENS launches, I will probably map it to `mvmurthy.eth` and you can use that to send me money easily.
+
+> https://ens.domains/
+
+> Docs: https://docs.ens.domains/en/latest/
+
+![ens](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ens.png)
+
+![getStartedEns](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/getStartedEns.png)
+
+![ensSubDomains1](https://raw.githubusercontent.com/wdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains1.png)
+
+![ensSubDomains2](https://raw.githubusercontent.comwdx7266/learning-ethereum/tree/master/img/DApp/Ethereum/ensSubDomains2.png)
+
+
+## Whisper
 
 Whisper is an interesting technology in the Ethereum ecosystem. It is a communication protocol for Dapps to interact with one another.
 
