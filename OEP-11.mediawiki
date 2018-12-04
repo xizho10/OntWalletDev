@@ -1,6 +1,6 @@
 <pre>
   OEP: 11
-  Title: dAPI in Mobile
+  Title: dAPI for Mobile
   Author: josh chow <josh_chow@163.com>, dashuang wang <wdashuang@gmail.com>
   Type: Standard
   Status: Accepted
@@ -200,7 +200,7 @@ response:
 | address  | String |           | Required |
 | time  | String |           | Required |
 
-====query Sign===
+====query Sign====
 <pre>
 {
     "id":"t",
