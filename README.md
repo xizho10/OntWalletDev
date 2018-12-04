@@ -61,29 +61,7 @@ $ ./ontology --testmode
 需要前端开发脚手架
 
 
-## 进度
 
-
-定鑫:
-1. ontology-python-obox: unbox, init,deploy, invoke, compile, test  //test使用帅帅的测试框架，节省时间
-2. ontology-python-debug //fork vm代码，基于vm上增加debug
-3. ontology-python-obox: debug
-4. ontology-python-obox: install SC
-5. IPFS python 调用例子。
-
-帅帅：
-1. pythonsdk 支持python 3.6,    
-2. python vm开发  
-3. python vm debug测试
-4. 除了obox，还有子链调研和开发
-
-大双：
-1. 开发基于ONT ID 的demo，使用Vue/React + Node.js + db
-2. 开发基于claim存证的demo，使用Vue/React+ Nodejs + IPFS
-3. dbox 基本命令实现
-4. dbox智能合约测试框架集成
-5. Mist provider类似实现
-6. IPFS ts 调用例子。
 
 
 ## Punica
