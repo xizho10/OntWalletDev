@@ -14,7 +14,9 @@ The OEP-11 Proposal is a standard interface like dAPI in Mobile. Support dApp wa
 dAPI currently only supports chrome extension, which cannot be used on the mobile side, Unable to meet a large number of mobile DAPP.
 
 ==Specification==
-=== App wake up and QR code scan API ===
+=== Mobile API ===
+
+API for App wake up and QR code scan in Mobile
 
 ====sigdata====
 <pre>
