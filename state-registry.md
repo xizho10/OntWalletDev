@@ -4,22 +4,6 @@
 
 ![img](images/rp.png)
 
-链上部分需要完成4本合约：
-
-1. 实现 oep4 合约
-2. 实现 PLCR Voting
-3. 实现 Parameterizer 合约 
-4. 实现 state registry 合约
-
-状态注册合约存储state machine的状态和处理状态变更请求，具有大量的API，但在这里我们只关注与运营商（即游戏开发者）特别相关的功能和事件。
-
-
-* oep4 合约
-
-该系统需要发行一个通证，用于激励和惩罚机制。
-
-* 状态注册合约
-
 > Bridge
 
 智能合约，用于锁定解锁、更新数字资产。
@@ -34,10 +18,19 @@
 当任何人申请将数据写入 State Registry 时需要质押一定的 Token 并同时进入一个等待期，如果验证人网络发现有人写入错误的数据，将发起挑战。随后将进入投票阶段，验证人网络中的节点或 Token 持有者将对结果进行投票。投票结束后，胜利者将拿走失败者质押的 Token。
 
 
+链上部分需要完成4本合约：
+
+1. 实现 oep4 合约
+2. 实现 PLCR Voting
+3. 实现 Parameterizer 合约 
+4. 实现 state registry 合约
+
+状态注册合约存储state machine的状态和处理状态变更请求，具有大量的API，但在这里我们只关注与运营商（即游戏开发者）特别相关的功能和事件。
+
 
 ## 1. 实现 oep4 合约
 
-
+该系统需要发行一个 oep4 通证，用于激励和惩罚机制。
 
 ## 2. 实现 PLCR Voting
 
@@ -99,6 +92,8 @@ function attrUUID(address _user, uint _pollID) public pure returns (bytes32 UUID
 
 ## 3. 实现Parameterizer合约
 
+参数配置合约，该合约会调用PLCRVoting和Oep4合约。
+
 合约事件：
 ```solidity
 event _ReparameterizationProposal(string name, uint value, bytes32 propID, uint deposit, uint appEndDate, address indexed proposer);
@@ -127,6 +122,9 @@ function tokenClaims(uint _challengeID, address _voter) public view returns (boo
 ```
 
 ## 4. 实现state registry合约
+
+参数配置合约，该合约会调用Parameterizer、PLCRVoting和Oep4合约。
+
 
 
 合约事件
