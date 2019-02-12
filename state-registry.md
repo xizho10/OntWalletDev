@@ -1,8 +1,18 @@
-# 智能合约开发需求
+# Rocket Protocol 智能合约开发需求
 
-为区块链游戏而设计的 Layer2 架构图：
+Layer2 解决方案 Rocket Protocol 是一个通用的解决方案，State Registry + Validators Network + State Machine 规范定义了通用的框架。
+
+游戏开发商在这基础之上只需实现两样内容便能快速的享受 Rocket Protocol 带来的优势：
+
+* 锁定和解锁数字资产的 Bridge 合约
+* 提供 Game Server 并在 State Machine 实现游戏逻辑
+
+架构图：
 
 ![img](images/rp.png)
+
+## 合约介绍
+
 
 > NFT contract
 
@@ -24,6 +34,7 @@
 状态注册合约存储state machine的状态和处理状态变更请求，具有大量的API，但在这里我们只关注与运营商（即游戏开发者）特别相关的功能和事件。
 
 
+## 合约功能实现
 
 链上部分需要完成4本合约，合约中使用的lib参考[Zeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts)：
 
@@ -32,14 +43,11 @@
 3. 实现 Parameterizer 合约 
 4. 实现 state registry 合约
 
-
-
-
-## 1. 实现 oep4 合约
+### 1. 实现 oep4 合约
 
 该系统需要发行一个 oep4 通证，用于激励和惩罚机制。
 
-## 2. 实现 PLCR Voting
+### 2. 实现 PLCR Voting
 
 PLCR Voting全称是Partial-Lock-Commit-Reveal Voting。
 
@@ -97,7 +105,7 @@ function attrUUID(address _user, uint _pollID) public pure returns (bytes32 UUID
 
 
 
-## 3. 实现Parameterizer合约
+### 3. 实现Parameterizer合约
 
 是PLCR合约的参数配置合约，该合约会调用PLCRVoting和Oep4合约。
 
@@ -134,7 +142,7 @@ function getOperator() public view returns (bytes32 operator)
 function tokenClaims(uint _challengeID, address _voter) public view returns (bool)
 ```
 
-## 4. 实现state registry合约
+### 4. 实现state registry合约
 
 参数配置合约，该合约会调用Parameterizer、PLCRVoting和Oep4合约。
 
@@ -188,9 +196,9 @@ function newRegistryWithToken(uint _supply,string _tokenName,uint8 _decimals,str
 ```
 
 
-### 主要函数介绍
+#### 主要函数介绍
 
-#### apply
+##### apply
 
 Submit a state application.
 
@@ -215,7 +223,7 @@ Then you could use the hash of `matchID` as the key.
 
 Note that it's recommended that the application is "immutable," meaning that the application refers to a fact at a particular moment in time. For instance, instead of applying "the level of dragon A", it's better to apply "the level of dragon A as of nonce 568927". This is because if you use the former, once the dragon levels up again, the application will cease to be valid and may be successfully challenged, which means you may lose your stake.
 
-#### updateStatus
+##### updateStatus
 
 Once `applyStageLength` seconds (see `registry-factory-config-example.json`) have passed, anyone may call `updateStatus` to confirm the application, i.e. writing it into the registry if it has not been successfully challenged.
 
@@ -225,7 +233,7 @@ Note that without calling this function, the application won't actually be writt
 function updateStatus(bytes32 _key)
 ```
 
-#### getData
+##### getData
 
 Get the data for a application.
 
@@ -237,7 +245,7 @@ function getData(bytes32 _key) returns (bool exists, string data)
 - `exists`: indicates whether the state application exists. If `exists` is `false`, `data` is an empty string.
 - `data`: the value of the application.
 
-#### exit
+##### exit
 
 Remove an entry from the state registry. The staked tokens will be returned to the owner of the entry. Only the owner of the entry can call this function.
 
@@ -245,9 +253,9 @@ Remove an entry from the state registry. The staked tokens will be returned to t
 function exit(bytes32 _key)
 ```
 
-### 主要事件介绍
+#### 主要事件介绍
 
-#### Application
+##### Application
 
 ```solidity
 event _Application(bytes32 indexed key, uint deposit, uint applyStageLen, uint appEndDate, string value, address indexed applicant);
@@ -255,7 +263,7 @@ event _Application(bytes32 indexed key, uint deposit, uint applyStageLen, uint a
 
 This event is emitted when an application has been made.
 
-#### ApplicationWhitelisted
+##### ApplicationWhitelisted
 
 ```solidity
 event _ApplicationWhitelisted(bytes32 indexed key)
@@ -263,7 +271,7 @@ event _ApplicationWhitelisted(bytes32 indexed key)
 
 This event is emitted when an application (i.e. a application) has been accepted.
 
-### 配置文件
+#### 配置文件
 
 Here we explain the fields in the config. 
 ```dtd
