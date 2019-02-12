@@ -1,6 +1,6 @@
 #  Ontology Obox Framework
 
-对标[Ethereum Truffle](https://truffleframework.com/docs)，[Truffle调研报告](dApp/dapp.md).
+对标[Ethereum Truffle](https://truffleframework.com/docs)，[Truffle调研报告](dapp.md).
 
 dApp优势：
 * 减轻节点故障。现代web应用程序依赖的基础设施，如服务器、代码库、数据库等，即使采用高可用性方案和可靠的基础设施服务商，也难以避免存在单点故障和停机。dapp通过多个对等节点网络上存储数据或基础架构的关键组建来缓解这些问题。

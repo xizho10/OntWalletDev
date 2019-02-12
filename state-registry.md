@@ -52,10 +52,10 @@ PLCR Voting全称是Partial-Lock-Commit-Reveal Voting。
 * PLCR投票（在其当前的实施中）不包括令牌 - 在投票的败诉方投票不会导致丢失一个令牌。
 
 参考合约地址： https://github.com/ConsenSys/PLCRVoting
-```
+
 
 合约事件
-```
+```solidity
 event _VoteCommitted(uint indexed pollID, uint numTokens, address indexed voter);
 event _VoteRevealed(uint indexed pollID, uint numTokens, uint votesFor, uint votesAgainst, uint indexed choice, address indexed voter, uint salt);
 event _PollCreated(uint voteQuorum, uint commitEndDate, uint revealEndDate, uint indexed pollID, address indexed creator);
@@ -65,7 +65,7 @@ event _TokensRescued(uint indexed pollID, address indexed voter);
 ```
 
 合约函数
-```
+```solidity
 function init(address _token) public
 function requestVotingRights(uint _numTokens) public
 function withdrawVotingRights(uint _numTokens) external
@@ -100,7 +100,7 @@ function attrUUID(address _user, uint _pollID) public pure returns (bytes32 UUID
 ## 3. 实现Parameterizer合约
 
 合约事件：
-```
+```solidity
 event _ReparameterizationProposal(string name, uint value, bytes32 propID, uint deposit, uint appEndDate, address indexed proposer);
 event _NewChallenge(bytes32 indexed propID, uint challengeID, uint commitEndDate, uint revealEndDate, address indexed challenger);
 event _ProposalAccepted(bytes32 indexed propID, string name, uint value);
@@ -111,7 +111,7 @@ event _RewardClaimed(uint indexed challengeID, uint reward, address indexed vote
 ```
 
 合约函数：
-```
+```solidity
 function init(address _owner,address _token,address _plcr,uint[] _parameters,bytes32 _operator) 
 function proposeReparameterization(string _name, uint _value) public onlyOwner returns (bytes32)
 function challengeReparameterization(bytes32 _propID) public returns (uint challengeID)
@@ -130,7 +130,7 @@ function tokenClaims(uint _challengeID, address _voter) public view returns (boo
 
 
 合约事件
-```
+```solidity
 event _Application(bytes32 indexed listingHash, uint deposit, uint applyStageLen, uint appEndDate, bytes32 data, address indexed applicant);
 event _Challenge(bytes32 indexed listingHash, uint challengeID, bytes32 data, uint commitEndDate, uint revealEndDate, address indexed challenger);
 event _Deposit(bytes32 indexed listingHash, uint added, uint newTotal, address indexed owner);
@@ -146,7 +146,7 @@ event _RewardClaimed(uint indexed challengeID, uint reward, address indexed vote
 ```
 
 合约函数
-```
+```solidity
 function init(address _token, address _voting, address _parameterizer, string _name) public
 function apply(bytes32 _listingHash, uint _amount, bytes32 _data) external
 function deposit(bytes32 _listingHash, uint _amount) external 
