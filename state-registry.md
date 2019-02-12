@@ -34,14 +34,16 @@ Layer2 解决方案 Rocket Protocol 是一个通用的解决方案，State Regis
 状态注册合约存储state machine的状态和处理状态变更请求，具有大量的API，但在这里我们只关注与运营商（即游戏开发者）特别相关的功能和事件。
 
 
-## 合约功能实现
+## 合约实现
 
-链上部分需要完成4本合约，合约中使用的lib参考[Zeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts)：
+链上部分需要完成4本合约，合约中使用的 Lib 链接地址 [Zeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts)：
 
 1. 实现 oep4 合约
 2. 实现 PLCR Voting
 3. 实现 Parameterizer 合约 
 4. 实现 state registry 合约
+
+以下是每本合约的功能描述和需实现的函数列表：
 
 ### 1. 实现 oep4 合约
 
