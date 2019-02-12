@@ -25,7 +25,7 @@
 
 
 
-链上部分需要完成4本合约：
+链上部分需要完成4本合约，合约中使用的lib参考[Zeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts)：
 
 1. 实现 oep4 合约
 2. 实现 PLCR Voting
@@ -99,8 +99,14 @@ function attrUUID(address _user, uint _pollID) public pure returns (bytes32 UUID
 
 ## 3. 实现Parameterizer合约
 
-参数配置合约，该合约会调用PLCRVoting和Oep4合约。
+是PLCR合约的参数配置合约，该合约会调用PLCRVoting和Oep4合约。
 
+```solidity
+// Global Variables
+EIP20Interface public token;
+PLCRVoting public voting;
+```
+    
 合约事件：
 ```solidity
 event _ReparameterizationProposal(string name, uint value, bytes32 propID, uint deposit, uint appEndDate, address indexed proposer);
@@ -132,7 +138,12 @@ function tokenClaims(uint _challengeID, address _voter) public view returns (boo
 
 参数配置合约，该合约会调用Parameterizer、PLCRVoting和Oep4合约。
 
-
+```solidity
+// Global Variables
+EIP20Interface public token;
+PLCRVoting public voting;
+Parameterizer public parameterizer;
+```
 
 合约事件
 ```solidity
@@ -177,7 +188,7 @@ function newRegistryWithToken(uint _supply,string _tokenName,uint8 _decimals,str
 ```
 
 
-### 几个主要函数介绍
+### 主要函数介绍
 
 #### apply
 
@@ -234,7 +245,7 @@ Remove an entry from the state registry. The staked tokens will be returned to t
 function exit(bytes32 _key)
 ```
 
-### 几个主要事件介绍
+### 主要事件介绍
 
 #### Application
 
