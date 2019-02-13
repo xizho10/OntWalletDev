@@ -7,6 +7,9 @@
 * 导出keystore或wif
 
 ### 注册
+
+注意： 需要添加HMAC认证方案。
+
 请求：
 
 ```json
@@ -16,8 +19,6 @@ method：POST
 {
 	"action":"registry",
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"phone":"15821703553",
 			"verifyCode": 123456,
@@ -54,8 +55,6 @@ method：POST
 {
 	"action":"login",
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"phone":"15821703553",
 			"verifyCode": 123456
@@ -93,8 +92,6 @@ method：POST
 {
 	"action":"editPhone", 
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"phone":"15821703553",
 			"newPhone": "15821703552",
@@ -107,8 +104,6 @@ method：POST
 {
 	"action":"editPassword", 
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"phone":"15821703553",
 			"oldPassword": "123456",
@@ -145,8 +140,6 @@ method：POST
 {
 	"action":"import ", 
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"type":"keystore" //or wif
 			"data":"......"
@@ -182,8 +175,6 @@ method：POST
 {
 	"action":"export", 
 	"version":"1.0",
-	"error":0,
-	"desc":"SUCCESS",
 	"params": {
 			"phone":"15821703553"
 			"password":"12345678"
